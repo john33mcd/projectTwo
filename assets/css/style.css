@@ -31,6 +31,13 @@ h1{
     text-align: center;
 }
 
+button {
+    font-family: 'Wendy One', sans-serif;
+    color: #1c1c0d;
+    font-size: 24px;
+    text-align: center;
+}
+
 #gameArea {
     margin: 0 auto;
     width: 50%;
@@ -54,8 +61,8 @@ h1{
 }
 
 .submitBtn{
-    margin: 1%;
-    width: 10vw;
+    margin: 4% 0 1%;
+    width: 20vw;
     height: 8vh;
     border: 2px solid #EBFF00;
     background-image: linear-gradient(#939366, #EBFF00);
