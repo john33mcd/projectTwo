@@ -6,6 +6,7 @@ const answerButtonsElement = document.getElementById("answer-buttons")
 
 function runGame() {
     showQuestion()
+    document.getElementById("question").innerHTML = questions[0].question;
 }
 
 function checkAnswer() {
@@ -23,14 +24,14 @@ function getCorrectAnswer() {
 function setNextQuestion() {
 }
 
-function showQuestion(questions){
-questionElement.innerText = question.question
+function showQuestion(){
+
 }
 
 /**
  * this will create the arrays of questions to be added to the HTML 
  */
-let questions = [{
+var questions = [{
     question: "Who won the 2022 Tour De France?",
     answers: [{
             text: 'Jonas Vindegaard',
