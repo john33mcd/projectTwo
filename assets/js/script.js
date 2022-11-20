@@ -7,6 +7,10 @@ const answerButtonsElement = document.getElementById("answer-buttons")
 function runGame() {
     showQuestion()
     document.getElementById("question").innerHTML = questions[0].question;
+    document.getElementById("answerOne").innerHTML = questions[0].answers[0].text;
+    document.getElementById("answerTwo").innerHTML = questions[0].answers[1].text;
+    document.getElementById("answerThree").innerHTML = questions[0].answers[2].text;
+    document.getElementById("answerFour").innerHTML = questions[0].answers[3].text;
 }
 
 function checkAnswer() {
