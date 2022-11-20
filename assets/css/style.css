@@ -40,6 +40,10 @@ button {
     text-align: center;
 }
 
+#question{
+    font-size: xx-large;
+}
+
 #gameArea {
     display: inline-flexbox;
     justify-content: center;

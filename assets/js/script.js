@@ -3,7 +3,10 @@ buttonTest.addEventListener("click", runGame)
 const questionElement = document.getElementById("question")
 const answerButtonsElement = document.getElementById("answer-buttons")
 
-
+/**
+ * this function begins when the start game button is pushed, calls questions from the array of questions, 
+ * assigns the questions to the relevant button, also makes the start quiz button disappear.
+ */
 function runGame() {
     showQuestion()
     document.getElementById("question").innerHTML = questions[0].question;
@@ -11,6 +14,7 @@ function runGame() {
     document.getElementById("answerTwo").innerHTML = questions[0].answers[1].text;
     document.getElementById("answerThree").innerHTML = questions[0].answers[2].text;
     document.getElementById("answerFour").innerHTML = questions[0].answers[3].text;
+    document.getElementById("test").style.display = 'none';
 }
 
 function checkAnswer() {
