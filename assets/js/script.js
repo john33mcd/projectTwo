@@ -1,43 +1,18 @@
-const buttonStart = document.getElementById("start")
-buttonStart.addEventListener("click", runGame)
-const questionElement = document.getElementById('question')
-const answerButtonElement = document.getElementById('answerBtn')
+
+
 
 /**
  * this function begins when the start game button is pushed, calls questions from the array of questions, 
  * assigns the questions to the relevant button, also makes the start quiz button disappear.
  */
- let shuffledQuestions, currentQuestionIndex
-
 function runGame() {
 
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    setNextQuestion()
-    /* document.getElementById("start").style.display = 'none' */
 }
-
 
 function setNextQuestion() {
-    showQuestion(shuffledQuestions[currentQuestionIndex])
-
 }
 
-function showQuestion(question) {
-    document.getElementById("question").innerHTML = questions[0].question;
-    document.getElementById("answerOne").innerHTML = questions[0].answers[0].text
-    document.getElementById("answerTwo").innerHTML = questions[0].answers[1].text
-    document.getElementById("answerThree").innerHTML = questions[0].answers[2].text
-    document.getElementById("answerFour").innerHTML = questions[0].answers[3].text
-        if (answer.correct) {
-            button.dataset.correct = answer.correct
-        }
-        button.addEventListener('click', selectAnswer)
-        answerBtnElement.appendChild(button)
-    }
-
-
-function selectAnswer (){
+function showQuestion() {
 
 }
 
@@ -86,5 +61,65 @@ var questions = [{
                 correct: false
             }
         ]
+    }, {
+        question: "What is the name given to the main group of cyclists in a race ?",
+        answers: [{
+                text: 'The Body',
+                correct: false
+            },
+            {
+                text: 'The Primary Pack',
+                correct: false
+            },
+            {
+                text: 'The Peleton',
+                correct: true
+            },
+            {
+                text: 'The Gaggle',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: "What colour jersey does the leader and winner of the Tour De France wear ?",
+        answers: [{
+                text: 'Red',
+                correct: false
+            },
+            {
+                text: 'Yellow',
+                correct: true
+            },
+            {
+                text: 'Polkadot',
+                correct: false
+            },
+            {
+                text: 'Green',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: "What colour jersey does the leader and winner of the points classification wear ?",
+        answers: [{
+                text: 'Green',
+                correct: true
+            },
+            {
+                text: 'Red',
+                correct: false
+            },
+            {
+                text: 'Yellow',
+                correct: false
+            },
+            {
+                text: 'Blue',
+                correct: false
+            }
+        ]
     }
 ]
+
