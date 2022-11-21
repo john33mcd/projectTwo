@@ -5,8 +5,11 @@
  * this function begins when the start game button is pushed, calls questions from the array of questions, 
  * assigns the questions to the relevant button, also makes the start quiz button disappear.
  */
-function runGame() {
 
+let addQuestion = document.getElementById('start')
+addQuestion.addEventListener('click', runGame)
+function runGame() {
+console.log('started')
 }
 
 function setNextQuestion() {
