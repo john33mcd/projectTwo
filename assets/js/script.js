@@ -1,24 +1,27 @@
-
-
-
 /**
  * this function begins when the start game button is pushed, calls questions from the array of questions, 
  * assigns the questions to the relevant button, also makes the start quiz button disappear.
  */
-
+let questionElement = document.getElementById("question")
+let answerButtons = document.getElementById("buttonGrid")
 let addQuestion = document.getElementById('start')
 addQuestion.addEventListener('click', runGame)
+let shuffledQuestions, questionIndex
 
 function runGame() {
 addQuestion.classList.add('hide')
-let buttonGrid = document.getElementById('buttonGrid')
-buttonGrid.classList.remove('hide')
+shuffledQuestions = questions.sort(() =>  Math.random() - .5)
+questionIndex = 0
+answerButtons.classList.remove('hide')
+setNextQuestion()
 }
 
 function setNextQuestion() {
+    showQuestion(shuffledQuestions[questionIndex])
 }
 
-function showQuestion() {
+function showQuestion(question) {
+    questionElement.innerText = question.question
 
 }
 
