@@ -124,6 +124,10 @@ footer i:hover{
     cursor:pointer;
     color: #939366;
 }
+/* used to hide elements*/
+.hide{
+    display: none;
+}
 
 @media screen and (max-height: 700px) {
     footer{

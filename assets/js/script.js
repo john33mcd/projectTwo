@@ -8,8 +8,11 @@
 
 let addQuestion = document.getElementById('start')
 addQuestion.addEventListener('click', runGame)
+
 function runGame() {
-console.log('started')
+addQuestion.classList.add('hide')
+let buttonGrid = document.getElementById('buttonGrid')
+buttonGrid.classList.remove('hide')
 }
 
 function setNextQuestion() {
