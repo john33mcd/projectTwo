@@ -8,8 +8,10 @@ let addQuestion = document.getElementById('start')
 addQuestion.addEventListener('click', runGame)
 let shuffledQuestions, questionIndex
 
+let buttons = document.getElementsByName("button")
+
 function runGame() {
-addQuestion.classList.add('hide')
+/*addQuestion.classList.add('hide') */
 shuffledQuestions = questions.sort(() =>  Math.random() - .5)
 questionIndex = 0
 answerButtons.classList.remove('hide')
@@ -22,8 +24,14 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question
+    document.getElementById("question").innerHTML = questions[0].question;
+    document.getElementById("answerOne").innerHTML = questions[0].answers[0].text
+    document.getElementById("answerTwo").innerHTML = questions[0].answers[1].text
+    document.getElementById("answerThree").innerHTML = questions[0].answers[2].text
+    document.getElementById("answerFour").innerHTML = questions[0].answers[3].text
+    }
 
-}
+
 
 
 
