@@ -48,7 +48,7 @@ function selectAnswer (){
  * this will create the arrays of questions to be added to the HTML 
  */
 var questions = [{
-        question: "Who won the 2022 Tour De France?",
+        question: "Who won the 2021 Tour De France?",
         answers: [{
                 text: 'Jonas Vindegaard',
                 correct: true
