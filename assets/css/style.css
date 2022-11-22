@@ -12,27 +12,25 @@ font-family: 'Wendy One', sans-serif;
     box-sizing: border-box;
 }
 
-body {
-    background-image: linear-gradient(#939366, #FBFAE7);
-    background-size: cover;
-    background-attachment: fixed;
-    color: #EBFF00;
-    font-family: 'Wendy One', sans-serif;
-    letter-spacing: 2px;
-
-}
-
 h1{
     font-family: 'Oleo Script', cursive;
     font-size: 50px;
     letter-spacing: 8px;
 }
-
 #title {
     height: 10vh;
     margin: 4% 3% 1%;
     text-align: center;
 }
+
+body {
+    background-color: #939366;
+        color: #EBFF00;
+        font-family: 'Wendy One', sans-serif;
+        letter-spacing: 2px;
+    }
+
+
 
 button {
     font-family: 'Wendy One', sans-serif;
@@ -43,11 +41,10 @@ button {
 
 #question{
     font-size: xx-large;
+    margin: 1vh;
 }
 
 #gameArea {
-    display: inline-flexbox;
-    justify-content: center;
     margin: 0 auto;
     width: 50%;
     height: 65vh;
@@ -60,6 +57,11 @@ button {
     overflow: auto;
 }
 
+.buttonGrid{
+    margin: 5vh;
+}
+
+
 .answerBtn {
     margin: 2%;
     width: 20vw;
@@ -68,6 +70,7 @@ button {
     background-color: #939366;
     padding: 20px;
     border-radius: 25px;
+    overflow: auto;
 }
 
 .submitBtn{
