@@ -22,6 +22,13 @@ function runGame() {
     document.getElementById("answerFour").innerHTML = questions[0].answers[3].text
 }
 
+function checkAnswer(selectedAnswer){
+    let correctAnswer = questions[question].answers.correct
+    if(correctAnswer == true){
+        alert("correct")
+    }
+
+}
 
 
 /**

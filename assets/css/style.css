@@ -84,7 +84,7 @@ button {
 
 button:hover {
    cursor:pointer;
-   background-image: linear-gradient(red, #EBFF00);
+   /*background-image: linear-gradient(red, #EBFF00); */
    background-color: red;
    transition: transform 150ms;
    transform: scale(1.03);
