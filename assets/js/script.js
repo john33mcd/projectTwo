@@ -1,26 +1,19 @@
-let questionElement = document.getElementById("question")
-let answerButtons = document.getElementById("buttonGrid")
-let addQuestion = document.getElementById('start')
-let shuffledQuestions, currentQuestionIndex
-addQuestion.addEventListener('click', runGame)
+let startButton = document.getElementById("start");
+let answerButtons = document.getElementById("answers");
+
+
+/* event listener that calls the runGame function when start button is clicked */
+
+startButton.addEventListener("click", runGame)
 /**
  * this function begins when the start game button is pushed, calls questions from the array of questions, 
  * assigns the questions to the relevant button, also makes the start quiz button disappear.
  */
-
 function runGame() {
-
-
-    addQuestion.classList.add('hide')
+    startButton.classList.add('hide')
     answerButtons.classList.remove('hide')
-    document.getElementById("question").innerHTML = questions[0].question;
-    document.getElementById("answerOne").innerHTML = questions[0].answers[0].text
-    document.getElementById("answerTwo").innerHTML = questions[0].answers[1].text
-    document.getElementById("answerThree").innerHTML = questions[0].answers[2].text
-    document.getElementById("answerFour").innerHTML = questions[0].answers[3].text
-    currentQuestionsIndex = 0
     setNextQuestion()
-    checkAnswer()
+    currentQuestionsIndex = 0
 }
 
 function setNextQuestion() {
@@ -28,17 +21,10 @@ function setNextQuestion() {
 }
 
 
-function checkAnswer(question) {
-    if(correct == true) {
-        alert("correct")
-    }
-    }
-
-
 /**
  * this will create the arrays of questions to be added to the HTML 
  */
-const questions = [{
+let questions = [{
         question: "Who won the 2021 Tour De France?",
         answers: [{
                 text: 'Jonas Vindegaard',
