@@ -14,15 +14,15 @@
     <h1 id="title"> Cycling Quiz</h1>
     <div id="gameArea">
         <button id="start" class="answerBtn btn"> Start Quiz ! </button>
-        <div id="question" value = "0">
+        <div id="question" class ="hide" value = "0">
         </div>
-        <div id=buttonGrid class="buttonGrid hide">
-            <button id="answerOne" class="answerBtn btn" onclick="checkAnswer()"></button>
-            <button id="answerTwo" class="answerBtn btn" onclick="checkAnswer()"></button>
-            <button id="answerThree" class="answerBtn btn" onclick="checkAnswer()"></button>
-            <button id="answerFour" class="answerBtn btn"onclick="checkAnswer()"></button>
+        <div id="answers" class="buttonGrid hide">
+            <button id="answerOne" class="answerBtn btn"> 1</button>
+            <button id="answerTwo" class="answerBtn btn" >2</button>
+            <button id="answerThree" class="answerBtn btn">3</button>
+            <button id="answerFour" class="answerBtn btn">4</button>
         </div>
-        <button id="submitBtn" class="answerBtn btn hide" data-type = "submit"> Submit !</button>
+        <button id="nextBtn" class="answerBtn btn hide" data-type = "submit"> Next Question !</button>
         <div id="scoreArea">
             <div id="correctAnswer"> Correct Answer: 0</div>
             <div id="wrongAnswer"> Wrong Answer: 0</div>
