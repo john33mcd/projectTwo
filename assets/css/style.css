@@ -8,15 +8,18 @@ font-family: 'Wendy One', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Wendy+One&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     font-family: 'Oleo Script', cursive;
     font-size: 50px;
     letter-spacing: 8px;
 }
+
 #title {
     height: 10vh;
     margin: 4% 3% 1%;
@@ -25,10 +28,10 @@ h1{
 
 body {
     background-color: #939366;
-        color: #EBFF00;
-        font-family: 'Wendy One', sans-serif;
-        letter-spacing: 2px;
-    }
+    color: #EBFF00;
+    font-family: 'Wendy One', sans-serif;
+    letter-spacing: 2px;
+}
 
 
 
@@ -39,7 +42,7 @@ button {
     text-align: center;
 }
 
-#question{
+#question {
     font-size: xx-large;
     margin: 1vh;
 }
@@ -57,7 +60,7 @@ button {
     overflow: auto;
 }
 
-.buttonGrid{
+.buttonGrid {
     margin: 5vh;
 }
 
@@ -73,7 +76,7 @@ button {
     overflow: auto;
 }
 
-.nextBtn{
+.nextBtn {
     margin: 4% 0 1%;
     width: 20vw;
     height: 8vh;
@@ -83,23 +86,23 @@ button {
 }
 
 button:hover {
-   cursor:pointer;
-   /*background-image: linear-gradient(red, #EBFF00); */
-   background-color: red;
-   transition: transform 150ms;
-   transform: scale(1.03);
+    cursor: pointer;
+    /*background-image: linear-gradient(red, #EBFF00); */
+    background-color: red;
+    transition: transform 150ms;
+    transform: scale(1.03);
 }
 
-.wrong{
-    border-color: red;
-    opacity: 0.8;
+.wrong {
+    background-color: red;
 }
 
-.correct{
-    border-color: green;
+.correct {
+    background-color: green;
+    color: #1c1c0d;
 }
 
-#correctAnswer{
+#correctAnswer {
     margin: 1%;
 }
 
@@ -116,25 +119,26 @@ footer {
     min-width: 100%;
 }
 
-footer a{
+footer a {
     color: #EBFF00;
     margin: 25px 20px;
     width: 50px;
     font-size: 40px;
 }
 
-footer i:hover{
-    cursor:pointer;
+footer i:hover {
+    cursor: pointer;
     color: #939366;
 }
+
 /* used to hide elements*/
-.hide{
+.hide {
     display: none;
 }
 
 @media screen and (max-height: 700px) {
-    footer{
+    footer {
         display: none;
     }
-    
+
 }
