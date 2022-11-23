@@ -1,6 +1,8 @@
 let startButton = document.getElementById("start");
 let answerButtons = document.getElementById("answers");
-
+let currentQuestionIndex;
+let shuffledQuestions;
+let questionElement = document.getElementById("question");
 
 /* event listener that calls the runGame function when start button is clicked */
 
@@ -11,13 +13,28 @@ startButton.addEventListener("click", runGame)
  */
 function runGame() {
     startButton.classList.add('hide')
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5)
+    currentQuestionIndex = 0
     answerButtons.classList.remove('hide')
+    questionElement.classList.remove('hide')
     setNextQuestion()
-    currentQuestionsIndex = 0
 }
 
 function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex])
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.question
+    document.getElementById("answerOne").innerHTML = questions[0].answers[0].text;
+    document.getElementById("answerTwo").innerHTML = questions[0].answers[1].text;
+    document.getElementById("answerThree").innerHTML = questions[0].answers[2].text;
+    document.getElementById("answerFour").innerHTML = questions[0].answers[3].text;
+    }
+
+
+function selectAnswer(){
+
 }
 
 
