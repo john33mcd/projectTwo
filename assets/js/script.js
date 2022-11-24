@@ -8,6 +8,10 @@ let nextQuestion = document.getElementById("nextBtn");
 /* event listener that calls the runGame function when start button is clicked */
 
 startButton.addEventListener("click", runGame)
+nextQuestion.addEventListener("click", () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 /**
  * this function begins when the start game button is pushed, calls questions from the array of questions, 
  * assigns the questions to the relevant button, also makes the start quiz button disappear.
@@ -41,6 +45,7 @@ function showQuestion(question) {
 }
 
 function reset() {
+    clearStatusClass(document.body)
     nextQuestion.classList.add('hide')
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
@@ -54,6 +59,14 @@ function selectedAnswer(e) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextQuestion.classList.remove('hide')
+    }
+    else {
+        startButton.innerText = "Start Again ?"
+        startButton.classList.remove("hide")
+        alert("you have answered all questions")
+    }
 }
 
 function setStatusClass(element, correct) {
