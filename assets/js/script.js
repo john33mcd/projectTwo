@@ -67,7 +67,6 @@ function selectedAnswer(e) {
         startButton.innerText = "Start Again ?"
         counter.innerHTML = "1"
         startButton.classList.remove("hide")
-        alert("you have answered all questions")
     }
 }
 
