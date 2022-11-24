@@ -101,8 +101,9 @@ button:hover {
     color: #1c1c0d;
 }
 
-#correctAnswer {
+#correctAnswer, #wrongAnswer {
     margin: 1%;
+    color:#EBFF00;
 }
 
 footer {
