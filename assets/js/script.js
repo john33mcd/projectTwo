@@ -4,12 +4,14 @@ let currentQuestionIndex;
 let shuffledQuestions;
 let questionElement = document.getElementById("question");
 let nextQuestion = document.getElementById("nextBtn");
+let counter = document.getElementById("questionCounter")
 
 /* event listener that calls the runGame function when start button is clicked */
 
 startButton.addEventListener("click", runGame)
 nextQuestion.addEventListener("click", () => {
     currentQuestionIndex++
+    counter.innerHTML++
     setNextQuestion()
 })
 /**
@@ -61,9 +63,9 @@ function selectedAnswer(e) {
     })
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextQuestion.classList.remove('hide')
-    }
-    else {
+    } else {
         startButton.innerText = "Start Again ?"
+        counter.innerHTML = "1"
         startButton.classList.remove("hide")
         alert("you have answered all questions")
     }
