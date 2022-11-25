@@ -89,6 +89,10 @@ button {
     border-radius: 25px;
 }
 
+#start{
+    overflow: hidden;
+}
+
 button:hover {
     cursor: pointer;
     background-color: #EBFF00;
