@@ -1,26 +1,25 @@
 
 # Sticky Bottle Trivia !
 
+
+<img src="assets/images/responsiveImage.jpg">
+
+## Quiz Purpose
+
 Sticky Bottle Trivia provides the user a quiz with various questions relating to cycling. The quiz provides
 a user friendly experience that can be played quickly, and a number of times if the user is that
 way inclined. The quiz is designed to operate on any device available.
+
+The purpose of the quiz is to present the user with 5 questions relating to cycling, allowing them
+to test their knowledge, learn new information and enjoy the experience.
 
 The quiz has been designed as a deliverable for the second project in the Code Institutes Diploma
 in Full Stack Software Development.
 
 Technologies used - HTML5, CSS3 and Javascript.
 
-Link to live website as followed -
+Link to live website as followed - [StickyBottleTrivia](https://john33mcd.github.io/projectTwo/ "link to Sticky bottle Trivia")
 
-
-place AMI RESPONSIVE HERE.
-
-
-
-## Quiz Purpose
-
-The purpose of the quiz is to present the user with 5 questions relating to cycling, allowing them
-to test their knowledge, learn new information and enjoy the experience.
 ## User Stories
 
 ### New User
@@ -43,8 +42,6 @@ Answer all questions correctly in one round of playing and retain new knowledge.
 
 ## Features
 
-
-
 ### Start Quiz
 
 
@@ -52,6 +49,18 @@ Answer all questions correctly in one round of playing and retain new knowledge.
 ### Quiz Question
 
 ### Restart Quiz
+
+## Design
+
+
+### Colours
+
+Palette was selected using [ColorSpace](https://mycolor.space/?hex=%23EBFF00&sub=1 "ColorSpace website")
+
+<img src="assets/images/palette.jpg">
+
+
+
 
 ## Testing
 
@@ -78,4 +87,8 @@ If you have any feedback, please reach out to me at jmcd-34@hotmail.com
 
 # Credits
 
-Used Web Dev Simplified code from tutorial in order to implement javascript functionality for this quiz - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k "Web Dev simplified link for quiz tutorial")
+- Used Web Dev Simplified code from tutorial in order to implement javascript functionality for this quiz - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k "Web Dev simplified link for quiz tutorial")
+
+- Used Brian Design code tutorial to learn and understand code - [Brian Designs](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2921s "Brian Design tutorial video for quiz")
+
+- 

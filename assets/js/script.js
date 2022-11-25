@@ -16,7 +16,7 @@ nextQuestion.addEventListener("click", () => {
 })
 /**
  * this function begins when the start game button is pushed, calls questions from the array of questions, 
- * assigns the questions to the relevant button, also makes the start quiz button disappear.
+ * assigns the answers to the relevant button, makes the start quiz button disappear, sets the relevant question.
  */
 function runGame() {
     startButton.classList.add('hide')
@@ -26,6 +26,7 @@ function runGame() {
     questionElement.classList.remove('hide')
     setNextQuestion()
 }
+
 
 function setNextQuestion() {
     reset();
@@ -45,7 +46,9 @@ function showQuestion(question) {
         answerButtons.appendChild(button)
     })
 }
-
+/**
+ * hides the next button, checks if there is a child to each button element, deletes answers
+ */
 function reset() {
     clearStatusClass(document.body)
     nextQuestion.classList.add('hide')
@@ -53,6 +56,14 @@ function reset() {
         answerButtons.removeChild(answerButtons.firstChild)
     }
 }
+/**
+ * assigns the selected element to picked, checks if the selected element has the dataset associated with the correct answer,
+ * adds class to the body making it go green if the answer is correct, also loops through the buttons and sets the button with
+ * the same class causing it to go green if it is the right answer. It then adds the next button as long as the index does not surpass
+ * the amount of questions left in the shuffled questions, if the number does surpass the amount of questions left, the start button
+ * has its hide class removed and text changed to start again? The question counter is reset and a notification is given to tell the user
+ * that the quiz has been completed
+ */
 
 function selectedAnswer(e) {
     let picked = e.target
@@ -70,6 +81,11 @@ function selectedAnswer(e) {
         alert("you have finished the quiz, congratulations")
     }
 }
+
+/**
+ * 
+ *  
+ */
 
 function setStatusClass(element, correct) {
     clearStatusClass(element)
