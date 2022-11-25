@@ -69,6 +69,8 @@ Palette was selected using [ColorSpace](https://mycolor.space/?hex=%23EBFF00&sub
 - I have confirmed that colours and fonts used for the website are easy to read and accessible by running it through lighthouse in devtools
 
 
+
+
 ADD LIGHTHOUSE IMAGE HERE
 
 ## Bugs
