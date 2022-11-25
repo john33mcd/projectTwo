@@ -21,7 +21,7 @@ h1 {
 }
 
 #title {
-    height: 10vh;
+    height: 3vh;
     margin: 4% 3% 1%;
     text-align: center;
 }
@@ -29,6 +29,10 @@ h1 {
 
 .counter {
     text-align: center;
+}
+
+#questionCounter {
+    padding-top: 2%;
 }
 
 body {
@@ -48,14 +52,14 @@ button {
 }
 
 #question {
-    font-size: xx-large;
+    font-size: x-large;
     margin: 1vh;
 }
 
 #gameArea {
     margin: 0 auto;
     width: 50%;
-    height: 65vh;
+    height: 70vh;
     background-color: #1c1c0d;
     border: 2px solid #EBFF00;
     padding: 20px;
@@ -89,7 +93,7 @@ button {
     border-radius: 25px;
 }
 
-#start{
+#start {
     overflow: hidden;
 }
 
@@ -112,6 +116,7 @@ button:hover {
 #wrongAnswer {
     margin: 1%;
     color: #EBFF00;
+    display: none;
 }
 
 
@@ -152,41 +157,43 @@ button:hover {
     }
 }
 
+
 @media screen and (max-width: 400px) {
 
 
-    
-    .counter{
+
+    .counter {
         display: none;
     }
 
-    #title{
+    #title {
         display: none;
     }
 
-    #start{
-        height: 30vh;
+    #start {
+        height: 20vh;
         width: 50vw;
         margin: 50% 10%;
     }
 
-    #answers{
+    #answers {
         margin: 0 auto;
         text-align: center;
     }
 
-    .btn{
+    .btn {
         font-size: large;
     }
 
 }
 
 @media screen and (max-width: 700px) {
-   .counter{
-    display: none;
-   }
+    .counter {
+        display: none;
+    }
 
-   #title{
-    display: none;
-   }
+    #title {
+        display: none;
+    }
+
 }

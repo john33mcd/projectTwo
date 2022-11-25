@@ -78,4 +78,4 @@ If you have any feedback, please reach out to me at jmcd-34@hotmail.com
 
 # Credits
 
-add web dev simplied tut 
+Used Web Dev Simplified code from tutorial in order to implement javascript functionality for this quiz - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k "Web Dev simplified link for quiz tutorial")
