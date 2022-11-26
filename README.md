@@ -42,13 +42,58 @@ Answer all questions correctly in one round of playing and retain new knowledge.
 
 ## Features
 
+- Start Page
+
+- Initial Question
+
+- Correct Answer
+
+- Incorrect Answer
+
+- Last Page
+
 ### Start Quiz
 
+
+The initial page is simple, displays the name of the quiz alongside the option of starting the quiz. There is a score counter
+which is currenty being excluded, endeavour to build on this project and include it in future versions.
+
+<img src="assets/images/startQuiz.jpg">
 
 
 ### Quiz Question
 
+
+Once the user has clicked to start the quiz, they are presented with the first question from a preset selection of questions,
+the questions are randomized, once the customer selects their answer they will be visually advised if they have successfully
+selected the correct answer and will be provided a button to move to the next question.
+
+
+<img src="assets/images/initialLanding.jpg">
+
+
+### Correct Answer
+
+
+If the user successfully picks the correct answer, both the button with the correct answer and the background will turn green. The options which are
+incorrect will turn red. Once a selection is picked, the option to move to the next question is provided.
+
+
+<img src="assets/images/correctAnswer.jpg">
+
+
+### Incorrect Answer
+
+If the user picks the wrong answer, the background will turn red, as will the three wrong options. The option which is
+correct will turn green. Once a selection is picked, the option to move to the next question is provided.
+
+<img src="assets/images/wrongAnswer.jpg">
+
 ### Restart Quiz
+
+When all questions have been answered, the start button appears with new text allowing the user to restart the quiz.
+
+<img src="assets/images/lastPage.jpg">
 
 ## Design
 
@@ -63,6 +108,16 @@ Palette was selected using [ColorSpace](https://mycolor.space/?hex=%23EBFF00&sub
 
 
 ## Testing
+
+## Validation
+
+warnings relating to use of let identified with JSHint -
+
+<img src="assets/images/jsHint.jpg">
+
+ Using new Javascript features (ES6) is added to configuration there are no warnings apparent.
+
+ <img src="assets/images/jsHint2.jpg">
 
 ### Accessibility
 

@@ -4,56 +4,56 @@ let currentQuestionIndex;
 let shuffledQuestions;
 let questionElement = document.getElementById("question");
 let nextQuestion = document.getElementById("nextBtn");
-let counter = document.getElementById("questionCounter")
+let counter = document.getElementById("questionCounter");
 
 /* event listener that calls the runGame function when start button is clicked */
 
-startButton.addEventListener("click", runGame)
+startButton.addEventListener("click", runGame);
 nextQuestion.addEventListener("click", () => {
-    currentQuestionIndex++
-    counter.innerHTML++
-    setNextQuestion()
-})
+    currentQuestionIndex++;
+    counter.innerHTML++;
+    setNextQuestion();
+});
 /**
  * this function begins when the start game button is pushed, calls questions from the array of questions, 
  * assigns the answers to the relevant button, makes the start quiz button disappear, sets the relevant question.
  */
 function runGame() {
-    startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    answerButtons.classList.remove('hide')
-    questionElement.classList.remove('hide')
-    setNextQuestion()
+    startButton.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    answerButtons.classList.remove('hide');
+    questionElement.classList.remove('hide');
+    setNextQuestion();
 }
 
 
 function setNextQuestion() {
     reset();
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        let button = document.createElement("button")
-        button.innerText = answer.text
-        button.classList.add("btn")
+        let button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", selectedAnswer)
-        answerButtons.appendChild(button)
-    })
+        button.addEventListener("click", selectedAnswer);
+        answerButtons.appendChild(button);
+    });
 }
 /**
  * hides the next button, checks if there is a child to each button element, deletes answers
  */
 function reset() {
-    clearStatusClass(document.body)
-    nextQuestion.classList.add('hide')
+    clearStatusClass(document.body);
+    nextQuestion.classList.add('hide');
     while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild)
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 /**
@@ -66,19 +66,19 @@ function reset() {
  */
 
 function selectedAnswer(e) {
-    let picked = e.target
-    let correct = picked.dataset.correct
-    setStatusClass(document.body, correct)
+    let picked = e.target;
+    let correct = picked.dataset.correct;
+    setStatusClass(document.body, correct);
     Array.from(answerButtons.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextQuestion.classList.remove('hide')
+        nextQuestion.classList.remove('hide');
     } else {
-        startButton.innerText = "Start Again ?"
-        counter.innerHTML = "1"
-        startButton.classList.remove("hide")
-        alert("you have finished the quiz, congratulations")
+        startButton.innerText = "Start Again ?";
+        counter.innerHTML = "1";
+        startButton.classList.remove("hide");
+        alert("you have finished the quiz, congratulations");
     }
 }
 
@@ -88,17 +88,17 @@ function selectedAnswer(e) {
  */
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add("correct")
+        element.classList.add("correct");
     } else {
-        element.classList.add("wrong")
+        element.classList.add("wrong");
     }
 }
 
 function clearStatusClass(element) {
-    element.classList.remove("correct")
-    element.classList.remove("wrong")
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
 }
 
 
@@ -204,4 +204,4 @@ let questions = [{
             }
         ]
     }
-]
+];
