@@ -104,10 +104,19 @@ Palette was selected using [ColorSpace](https://mycolor.space/?hex=%23EBFF00&sub
 
 <img src="assets/images/palette.jpg">
 
+### Typography 
 
+Fonts used were imported from Google fonts -
 
+- font-family: 'Oleo Script', cursive
+- font-family: 'Wendy One', sans-serif
 
 ## Testing
+
+- I cascaded the website link to family members and colleagues to test on different devices, used feedback to make relevant changes
+- I tested the website on Google chrome and Microsoft Edge
+- I utilised development tools in order to test the responsiveness of the site, I tested and confirmed each page operates as required for standard screen sizes available
+- I tested buttons and functionality of the quiz, operates and performs to a standard that could be expected
 
 ## Validation
 
@@ -117,19 +126,24 @@ warnings relating to use of let identified with JSHint -
 
 <img src="assets/images/jsHint.jpg">
 
+
  Using new Javascript features (ES6) is added to configuration there are no warnings apparent.
 
  <img src="assets/images/jsHint2.jpg">
 
- ### W3C CSS 
+ ### W3C CSS
 
  No errors were returned when CSS was passed through the official W3C CSS Validator (Jigsaw Validator)
 
  <img src="assets/images/cssVal.jpg">
 
-### Accessibility
+### W3C HTML
 
-- Lighthouse test conducted, result below
+ No errors were returned when HTML was passed through the official W3C HTML Validator
+
+ <img src="assets/images/valHTML.jpg">
+
+### Lighthouse
 
 <img src="assets/images/lighthouse.jpg">
 
@@ -153,7 +167,7 @@ font black (which matched background).
 
 ## Deployment
 
-- The site has been deployed using Github pages, in order to do this I went to the settings page of my projects repository, went to the pages tab on the left hand side of the screen, selected the Main branch and saved - this then provides a link for my website as followed - [StickyBottleTrivia](https://john33mcd.github.io/projectTwo/ "link to Sticky bottle Trivia")
+The site has been deployed using Github pages, in order to do this I went to the settings page of my projects repository, went to the pages tab on the left hand side of the screen, selected the Main branch and saved - this then provides a link for my website as followed - [StickyBottleTrivia](https://john33mcd.github.io/projectTwo/ "link to Sticky bottle Trivia")
 
 ## Authors
 
@@ -163,12 +177,14 @@ https://github.com/john33mcd
 
 If you have any feedback, please reach out to me at jmcd-34@hotmail.com
 
-# Credits
+# Credits and Acknowledgements
 
-- Used Web Dev Simplified code from tutorial in order to implement javascript functionality for this quiz - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k "Web Dev simplified link for quiz tutorial")
+- Used Web Dev Simplified code and code blocks from tutorial in order to implement javascript functionality for this quiz - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k "Web Dev simplified link for quiz tutorial")
 
 - Used Brian Design code tutorial to learn and understand code - [Brian Designs](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2921s "Brian Design tutorial video for quiz")
 
 - Used [W3Schools](https://www.w3schools.com/ "W3Schools") regularly to address a multitude of different coding challenges and issues that arose throughout project
 
 - Used [Stackoverflow](https://www.stackoverflow.com/ "W3Schools") regularly to address a multitude of different coding challenges and issues that arose throughout project
+
+- Referred to code institutes various sample projects, mainly Love Maths and Rock, paper, Scissors sample projects to understand how javascript and HTML were communicating
