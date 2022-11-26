@@ -56,7 +56,8 @@ Answer all questions correctly in one round of playing and retain new knowledge.
 
 
 The initial page is simple, displays the name of the quiz alongside the option of starting the quiz. There is a score counter
-which is currenty being excluded, endeavour to build on this project and include it in future versions.
+which is currenty being excluded, endeavour to build on this project and include it in future versions, deemed unnecessary for current
+version.
 
 <img src="assets/images/startQuiz.jpg">
 
@@ -164,6 +165,10 @@ scroll bar - https://stackoverflow.com/questions/11219931/how-to-force-div-eleme
 
 - bug6 - question was disappearing when correct answer was selected, bug fixed by removing css that was targeting correct class element and turning
 font black (which matched background).
+
+## Unfixed Bugs
+
+- There is no unfixed bugs that have been identified at this time
 
 ## Deployment
 
