@@ -1,3 +1,5 @@
+// Web dev simplified code has been followed in order to add javascript functionality to this project. Reference to video made in readMe.
+
 let startButton = document.getElementById("start");
 let answerButtons = document.getElementById("answers");
 let currentQuestionIndex;
@@ -32,6 +34,15 @@ function setNextQuestion() {
     reset();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
+
+/**
+ * pulls from questions array and adds question text to question element.
+ * loops through answers from questions and for each answer a button is created,
+ * and the inner text for the button is applied to each new button. the buttons
+ * are then given the classlist of btn to apply styles to same, the function
+ * then applies the dataset of correct to the button if it is correct. Event listener
+ * calls the button the user has selected and sets of the selected answer function.
+ */
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
@@ -81,11 +92,6 @@ function selectedAnswer(e) {
         alert("you have finished the quiz, congratulations");
     }
 }
-
-/**
- * 
- *  
- */
 
 function setStatusClass(element, correct) {
     clearStatusClass(element);
