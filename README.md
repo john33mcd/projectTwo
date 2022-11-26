@@ -111,6 +111,8 @@ Palette was selected using [ColorSpace](https://mycolor.space/?hex=%23EBFF00&sub
 
 ## Validation
 
+### JSHint
+
 warnings relating to use of let identified with JSHint -
 
 <img src="assets/images/jsHint.jpg">
@@ -118,6 +120,12 @@ warnings relating to use of let identified with JSHint -
  Using new Javascript features (ES6) is added to configuration there are no warnings apparent.
 
  <img src="assets/images/jsHint2.jpg">
+
+ ### W3C CSS 
+
+ No errors were returned when CSS was passed through the official W3C CSS Validator (Jigsaw Validator)
+
+ <img src="assets/images/cssVal.jpg">
 
 ### Accessibility
 
